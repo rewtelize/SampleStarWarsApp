@@ -1,0 +1,28 @@
+li, strong {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    justify-content: center;
+    border-color: grey;
+    box-sizing: border-box;
+    -webkit-appearance: textfield;
+    border-radius: 0;
+    color: black;
+    height: 100%;
+    width: 25%;
+    border: .0625rem solid grey;
+    padding: .625rem 1rem;
+    font: inherit;
+    margin: 0;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}

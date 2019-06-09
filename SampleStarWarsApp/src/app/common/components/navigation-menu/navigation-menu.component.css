@@ -1,0 +1,33 @@
+.horizontal-list {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div li {
+    float: left;
+}
+
+button {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 9px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+li button:disabled {
+    opacity: .4;
+    cursor: default;
+}

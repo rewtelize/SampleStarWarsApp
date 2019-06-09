@@ -1,0 +1,15 @@
+<div class="horizontal-list">
+    <input type="search" aria-label="Search by title" (keyup)="onSearchBox($event.target.value)" 
+        list="films" placeholder="Search for films... ">
+    <datalist *ngIf="!closeRecommendations" id="films">
+        <option *ngFor="let film of filmsList" value="{{ film.title }}" (click)="onOptionFilm(film)">
+    </datalist>
+    <button (click)="onClick()">Search</button>
+</div>
+
+<br>
+
+<strong *ngIf="prevSearch.length > 0">You have already tried: </strong>
+<ul>
+    <li *ngFor="let search of prevSearch">{{ search }}</li>
+</ul>

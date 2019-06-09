@@ -1,0 +1,7 @@
+<div class="horizontal-list">
+    <ul>
+        <li><button [disabled]="currentPage === 1" (click)="onPrevCharacter(character)">&larr; Previous</button></li>
+        <li *ngFor="let character of charactersList"><button (click)="onCharacter(character)">{{ character.name }}</button></li>
+        <li><button [disabled]="currentPage === totalPages" (click)="onNextCharacter(character)">Next &rarr;</button></li>
+    </ul>
+</div>
